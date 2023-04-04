@@ -20,6 +20,10 @@ A single file is created initially and then overwritten upon detecting changes:
 
 By default, they are volumed to `/var/data/anilist-gql-diff` on the host.
 
+## Webhook
+
+If provided, a notification of a new schema version is sent to the specified webhook URL.
+
 ## Env
 
 Configurations should be specified in the root `.env` file. See `.env.example` for corresponding keys.
