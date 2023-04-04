@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  anilist-gql-diff:
+    build:
+      context: .
+    image: anilist-gql-diff:1
+    container_name: anilist-gql-diff
+    restart: unless-stopped
+    networks:
+      - open
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+    working_dir: /app
+    command: main.py
+
+networks:
+  open:
+    external: true
