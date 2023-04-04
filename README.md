@@ -1,8 +1,8 @@
-# anilist-gql-diff
+# graphql-schema-diff
 
 [![Code style: black](https://img.shields.io/badge/style-black-000000.svg)](https://github.com/psf/black)
 
-Periodic checks for changes in the [AniList GraphQL API](https://anilist.github.io/ApiV2-GraphQL-Docs) schema, the
+Periodic checks for changes in the [GraphQL schema](https://graphql.org/learn/schema) of the provided API endpoint, the
 capture of diffs, and flat sequential versioning upon detected changes.
 
 ## Output
@@ -18,11 +18,11 @@ A single file is created initially and then overwritten upon detecting changes:
 
 - `latest-version.txt`: holds the info of the latest schema version to compare against
 
-By default, they are volumed to `/var/data/anilist-gql-diff` on the host.
+By default, they are volumed to `/var/data/graphql-schema-diff` on the host.
 
 ## Webhook
 
-If provided, a notification of a new schema version is sent to the specified webhook URL.
+If provided, a notification of a new schema version is sent to the specified Discord webhook URL.
 
 ## Env
 

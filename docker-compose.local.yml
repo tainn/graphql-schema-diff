@@ -1,11 +1,11 @@
 version: "3.8"
 
 services:
-  anilist-gql-diff:
+  graphql-schema-diff:
     build:
       context: .
-    image: anilist-gql-diff:1
-    container_name: anilist-gql-diff
+    image: graphql-schema-diff:1
+    container_name: graphql-schema-diff
     restart: unless-stopped
     networks:
       - open
