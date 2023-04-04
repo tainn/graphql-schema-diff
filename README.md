@@ -22,7 +22,8 @@ By default, they are volumed to `/var/data/graphql-schema-diff` on the host.
 
 ## Webhook
 
-If provided, a notification of a new schema version is sent to the specified Discord webhook URL.
+If provided, a notification of a new schema version is sent to the
+specified [Discord webhook](https://discord.com/developers/docs/resources/webhook) URL.
 
 ## Env
 
