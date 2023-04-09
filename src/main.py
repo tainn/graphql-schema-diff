@@ -78,7 +78,7 @@ def discord_webhook(version: int) -> None:
     form.post(os.getenv("GSD_DISCORD_WEBHOOK"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     logutil.configure()
     logger: Logger = getLogger(__name__)
 
